@@ -31,3 +31,6 @@ INSERT INTO products (product_name, department_name, price, stock_quantity)
 values ('PS4', 'Entertainment', 450, 5);
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
 values ('SWITCH', 'Entertainment', 300, 1);
+
+USE bamazon_db;
+SELECT * FROM products WHERE department_name IS "Food"

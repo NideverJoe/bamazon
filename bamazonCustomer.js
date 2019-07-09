@@ -5,6 +5,11 @@
 var mysql = require("mysql");
 var inquirer = require('inquirer');
 
+/////////////////////////
+//Global Variables//
+/////////////////////////
+var useritem = 0;
+var userquantity = 0;
 
 /////////////////////////
 //DISPLAY DATABASE INVENTORY//
@@ -54,6 +59,9 @@ inquirer
       },
     /* Pass your questions in here */
   ])
-  .then(answers => {
+  .then(function(purchase) {
+
+    useritem = purchase.productID;
+    userquantity= purchase.quantity;
     // Use user feedback for... whatever!!
   });
