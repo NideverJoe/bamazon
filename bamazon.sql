@@ -13,7 +13,7 @@ CREATE TABLE products(
 
 INSERT INTO products (product_name, department_name, price, stock_quantity) 
 values ('Cheese', 'Food', 2.25, 150),
- ('Cucumbers', 'Food', 1.10, 300),
+ ('Cucumbers', 'Food', 1.99, 300),
  ('Almonds', 'Food', 8.00, 5000),
  ('Snuggie', 'Bedding', 20, 50),
  ('Pillow', 'Bedding', 5, 175),
