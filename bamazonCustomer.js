@@ -26,7 +26,7 @@ var connection = mysql.createConnection({
   
     // Your password
     password: "Iamr00t",
-    database: "playlistDB"
+    database: "bamazon_db"
   });
   
   connection.connect(function(err) {
@@ -38,13 +38,15 @@ var connection = mysql.createConnection({
   function afterConnection() {
   connection.query("SELECT * FROM products", function(err, res) {
     if (err) throw err;
-    console.log(res);
+    console.table(res);
+    userinput();
     connection.end();
   });
 }
 /////////////////////////
 //ASK USER FOR PURCHASE INFO//
 /////////////////////////
+function userinput(){
 inquirer
   .prompt([
     {
@@ -57,11 +59,10 @@ inquirer
         name: "quantity",
         message: "How many would you like to purchase?"
       },
-    /* Pass your questions in here */
   ])
   .then(function(purchase) {
 
     useritem = purchase.productID;
     userquantity= purchase.quantity;
     // Use user feedback for... whatever!!
-  });
+  })};
