@@ -6,6 +6,7 @@
 ## Technologies Used
 * javascript
 * SQL Database
+* node.js
 * mySQL.js
 * inquirer.js
   
