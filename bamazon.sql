@@ -22,5 +22,3 @@ values ('Cheese', 'Food', 2.25, 150),
  ('XBOX', 'Entertainment', 500, 5),
  ('PS4', 'Entertainment', 450, 5),
  ('SWITCH', 'Entertainment', 300, 1);
-
-SELECT product_name FROM products;

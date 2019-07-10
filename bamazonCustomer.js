@@ -98,12 +98,12 @@ function updatequantity(){
       ],
       function(err, res) {
         if (err) throw err;
-        console.log(res.affectedRows + " products updated!\n");
+        // console.log(res.affectedRows + " products updated!\n");
         // Call deleteProduct AFTER the UPDATE completes
         // deleteProduct();
       }
     );
-    console.log(query.sql);
+    // console.log(query.sql);
     console.log(`Thank you for shopping with us at BAMAZON-CLI!`)
     connection.end();
 
